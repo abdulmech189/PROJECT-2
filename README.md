@@ -15,6 +15,29 @@ Created the Streamlit tab name, Header, Text informations in the interface..
 To collect the Input from the user, 4 Columns created (Keyword, Tweet limit, Start date, End date)..
 St.Session_State used to stay 'Submit' button in True state, if any other button we click.. It will avoid reloading of page again and again..
 
+# To create Front interface for USER using Streamlit:
+st.set_page_config(page_title='TWITTER SCRAPER')   # Browser Streamlit Tab name..
+st.header('Twitter Data Scraper')  # Header in Streamlit page..
+st.markdown('_Enter the KEYWORD, DATE and TWEET LIMITS to scrape_')   # Text informations to USER..
+
+
+# Creating input space to USER (For getting Keyword, No. of Tweets to be sraped):
+col1,col2=st.columns(2)
+with col1:
+    Key_Word=st.text_input('Enter KEYWORD: ')
+with col2:
+    Tweet_limit=st.text_input('Enter TWEET limit: ')
+
+# Creating input space to USER (For getting Start and End date to scrape Tweets):
+col3,col4=st.columns(2)
+with col3:
+    Since_date=st.date_input('Enter START date: ')
+with col4:
+    Until_date=st.date_input('Enter END date: ')
+
+# Def a variable to Concatenate the Keyword with Date limits:
+Query_with_date=Key_Word+' '+'until:'+str(Until_date)+' '+'since:'+str(Since_date)
+
 Step 2: Scraping Tweets from Twitter:
 Using FOR loop, Data scraped and stored in a variable 'Tweet'.. 
 After checking with the Tweet limit range, it is the appended into the Temporary list 'Tweet_Storage'..
