@@ -27,8 +27,8 @@ Converting the Tweets which is stored in Temporary list in Dataframe using Panda
 It is also viewed in Streamlit interface...
 
 
-**Step 4: Creating 3 buttons for USER:**
-1. Download CSV: Here, St.Download button created and the Dataframe file is converted into required CSV format..
+**Step 4: Creating 3 options for USER:**
+1. Download CSV: Here, St.Download button created and the Dataframe file is converted into required CSV format.. After clicking the button, it will directly download.
 2. Download json: Similary, another Download button created to download the file in json format. Here, Dataframe file is converted into json format..
 3. Import to DB: Another button created to import the Scraped data into the Mongo Database.. When this button is clicked, python will connect with MongoDB server, Then it will call particular Database, collection and will store the Scraped data with Key_ID of each Scraping.. (Key_ID is created with Keyword searching and Current Timestamp..)
 
