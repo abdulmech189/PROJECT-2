@@ -1,9 +1,9 @@
 # PROJECT-2
-TWITTER Data Scraping
+**TWITTER Data Scraping**
 
-Problem: To scrape the data like (date, id, url, tweet content, user,reply count, retweet count,language, source, like count etc) from TWITTER based on Keyword, Time period given by the user..
+**Problem**: To scrape the data like (date, id, url, tweet content, user,reply count, retweet count,language, source, like count etc) from TWITTER based on Keyword, Time period given by the user..
 
-Imported Libraries:
+**Imported Libraries:**
 1. Streamlit - To create a Front end user interface to get the input..
 2. snscrape - It is specially used to scrape datas from Social media platform, like Facebook, Twitter etc..
 3. pymongo - To export scraped datas into Mongo Database.. pymongo connects python IDE with MongoDB server..
